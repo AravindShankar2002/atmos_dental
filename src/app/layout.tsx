@@ -83,6 +83,7 @@ export default function RootLayout({
         </ThemeProvider>
         <Analytics />
         <WebVitals />
+        <SpeedInsights />
       </body>
     </html>
   );
