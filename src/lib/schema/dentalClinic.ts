@@ -1,0 +1,57 @@
+export const dentalClinicSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dentist',
+  name: 'Atmos Dental & Aesthetic Clinic',
+  image: '/images/logo_black_bg.png',
+  url: 'https://atmosdental.com',
+  telephone: '+91-90254-08659',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'State Highway 49, 5, 1st Floor, Rajiv Gandhi Nagar, 1st Main Road, East Coast Rd',
+    addressLocality: 'Panaiyur',
+    addressRegion: 'Tamil Nadu',
+    postalCode: '600119',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 12.8914394,
+    longitude: 80.2430741,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '09:00',
+      closes: '20:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Sunday'],
+      opens: '10:00',
+      closes: '14:00',
+    },
+  ],
+  priceRange: '$$',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    reviewCount: '127',
+  },
+  sameAs: [
+    'https://www.google.com/maps/place/Atmos+Dental+and+Aesthetic+Clinic/@12.8914394,80.2430741,17z',
+  ],
+  medicalSpecialty: 'Dentistry',
+  availableService: [
+    { '@type': 'MedicalProcedure', name: 'Dental Cleaning' },
+    { '@type': 'MedicalProcedure', name: 'Teeth Whitening' },
+    { '@type': 'MedicalProcedure', name: 'Dental Braces and Aligners' },
+    { '@type': 'MedicalProcedure', name: 'Root Canal Treatment' },
+    { '@type': 'MedicalProcedure', name: 'Tooth Extraction' },
+    { '@type': 'MedicalProcedure', name: 'Dental Fillings' },
+    { '@type': 'MedicalProcedure', name: 'Crowns and Bridges' },
+    { '@type': 'MedicalProcedure', name: 'Pediatric Dentistry' },
+    { '@type': 'MedicalProcedure', name: 'Smile Makeover' },
+    { '@type': 'MedicalProcedure', name: 'Aesthetic Treatments' },
+  ],
+};

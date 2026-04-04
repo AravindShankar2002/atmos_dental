@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl:*)",
+      "WebSearch",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:unhead.unjs.io)",
+      "WebFetch(domain:schemavalidator.org)",
+      "Read(//d/D-Claude-projects/**)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
