@@ -8,6 +8,7 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 import Analytics from "@/components/GoogleAnalytics";
 import { WebVitals } from "@/components/WebVitals";
 import { dentalClinicSchema } from "@/lib/schema/dentalClinic";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const viewport: Viewport = {
   themeColor: '#00E5FF',
