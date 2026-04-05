@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-6 text-white">Quick Links</h3>
+            <h3 className={`font-semibold text-lg mb-6 ${theme === "light" ? "text-black" : "text-white"}`}>Quick Links</h3>
             <ul className="space-y-4">
               {[
                 { href: "/", label: "Home" },
@@ -66,7 +66,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold text-lg mb-6 text-white">Contact Us</h3>
+            <h3 className={`font-semibold text-lg mb-6 ${theme === "light" ? "text-black" : "text-white"}`}>Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-4">
                 <MapPin size={20} className="footer-contact-icon mt-0.5" />
