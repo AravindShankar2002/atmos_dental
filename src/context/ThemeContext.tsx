@@ -17,6 +17,13 @@ function getSystemTheme(): Theme {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
+function getInitialTheme(): Theme {
+  if (typeof window === "undefined") return "dark";
+  const stored = localStorage.getItem("theme") as Theme | null;
+  if (stored === "dark" || stored === "light") return stored;
+  return getSystemTheme();
+}
+
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>("dark");
   const [mounted, setMounted] = useState(false);
@@ -28,15 +35,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
-    const stored = localStorage.getItem("theme") as Theme | null;
-    if (stored === "dark" || stored === "light") {
-      setTheme(stored);
-      applyTheme(stored);
-    } else {
-      const system = getSystemTheme();
-      setTheme(system);
-      applyTheme(system);
-    }
+    const initial = getInitialTheme();
+    setTheme(initial);
+    applyTheme(initial);
     setMounted(true);
   }, [applyTheme]);
 
