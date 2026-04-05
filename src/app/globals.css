@@ -3,7 +3,7 @@
 
 /* Dark Theme (Default) */
 :root,
-.dark {
+[data-theme="dark"] {
   --bg-dark: #0A0A0A;
   --bg-card: #111111;
   --bg-card-hover: #161616;
@@ -19,7 +19,7 @@
 }
 
 /* Light Theme */
-.light {
+[data-theme="light"] {
   --bg-dark: #FFFFFF;
   --bg-card: #F8F9FA;
   --bg-card-hover: #E9ECEF;
@@ -72,7 +72,7 @@ main {
   text-shadow: 0 0 10px var(--neon-glow), 0 0 20px var(--neon-glow), 0 0 40px var(--neon-glow);
 }
 
-.light .neon-text {
+[data-theme="light"] .neon-text {
   text-shadow: none;
 }
 
@@ -81,7 +81,7 @@ main {
   text-shadow: 0 0 8px rgba(79, 209, 255, 0.3);
 }
 
-.light .neon-text-soft {
+[data-theme="light"] .neon-text-soft {
   text-shadow: none;
 }
 
@@ -90,7 +90,7 @@ main {
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.1);
 }
 
-.light .neon-border {
+[data-theme="light"] .neon-border {
   box-shadow: none;
 }
 
@@ -98,7 +98,7 @@ main {
   box-shadow: 0 0 20px var(--neon-glow), 0 0 40px rgba(0, 229, 255, 0.2);
 }
 
-.light .neon-glow {
+[data-theme="light"] .neon-glow {
   box-shadow: none;
 }
 
@@ -131,11 +131,11 @@ main {
   transform: translateY(-2px);
 }
 
-.light .neon-btn-primary {
+[data-theme="light"] .neon-btn-primary {
   color: #FFFFFF;
 }
 
-.light .neon-btn-primary:hover {
+[data-theme="light"] .neon-btn-primary:hover {
   color: #FFFFFF;
 }
 
@@ -154,7 +154,7 @@ main {
   transform: translateY(-2px);
 }
 
-.light .neon-btn-secondary:hover {
+[data-theme="light"] .neon-btn-secondary:hover {
   color: #FFFFFF;
 }
 
@@ -173,11 +173,11 @@ main {
   transform: translateY(-2px);
 }
 
-.light .neon-btn-whatsapp {
+[data-theme="light"] .neon-btn-whatsapp {
   box-shadow: none;
 }
 
-.light .neon-btn-whatsapp:hover {
+[data-theme="light"] .neon-btn-whatsapp:hover {
   box-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
 }
 
@@ -197,7 +197,7 @@ main {
   transform: translateY(-4px);
 }
 
-.light .service-card:hover {
+[data-theme="light"] .service-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -207,7 +207,7 @@ main {
   transition: background-color 0.3s ease;
 }
 
-.light .section-dark {
+[data-theme="light"] .section-dark {
   background: #F8F9FA;
 }
 
@@ -237,7 +237,7 @@ main {
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
 }
 
-.light .input-neon:focus {
+[data-theme="light"] .input-neon:focus {
   box-shadow: none;
 }
 
@@ -261,7 +261,7 @@ main {
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.light .mobile-cta-bar {
+[data-theme="light"] .mobile-cta-bar {
   background: rgba(255, 255, 255, 0.95);
   border-top: 1px solid #DEE2E6;
 }
@@ -350,7 +350,7 @@ main {
   box-shadow: 0 0 20px rgba(0, 123, 255, 0.1);
 }
 
-.light .trust-badge:hover {
+[data-theme="light"] .trust-badge:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -391,7 +391,7 @@ main {
   transition: width 0.3s ease;
 }
 
-.light .nav-link::after {
+[data-theme="light"] .nav-link::after {
   box-shadow: none;
 }
 
@@ -406,7 +406,7 @@ main {
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.light .footer-dark {
+[data-theme="light"] .footer-dark {
   background: #F8F9FA;
   border-top: 1px solid #DEE2E6;
 }
@@ -432,11 +432,11 @@ main {
   background: var(--bg-card);
 }
 
-.light .theme-toggle {
+[data-theme="light"] .theme-toggle {
   border-color: #DEE2E6;
 }
 
-.light .theme-toggle:hover {
+[data-theme="light"] .theme-toggle:hover {
   border-color: var(--accent-blue);
   background: #F8F9FA;
 }
@@ -449,7 +449,7 @@ main {
   background-clip: text;
 }
 
-.light .text-gradient {
+[data-theme="light"] .text-gradient {
   background: linear-gradient(135deg, #007BFF 0%, #0056b3 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -461,7 +461,7 @@ main {
   transition: filter 0.3s ease;
 }
 
-.light .icon-glow {
+[data-theme="light"] .icon-glow {
   filter: none;
 }
 
@@ -472,7 +472,7 @@ main {
   transition: text-shadow 0.3s ease;
 }
 
-.light .star-rating {
+[data-theme="light"] .star-rating {
   text-shadow: none;
 }
 
@@ -485,7 +485,7 @@ main {
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.light .navbar-scrolled {
+[data-theme="light"] .navbar-scrolled {
   background: rgba(255, 255, 255, 0.88);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -527,15 +527,15 @@ main {
   width: 100%;
 }
 
-.light .navbar-link {
+[data-theme="light"] .navbar-link {
   color: var(--text-gray);
 }
 
-.light .navbar-link:hover {
+[data-theme="light"] .navbar-link:hover {
   color: #000000;
 }
 
-.light .navbar-link::after {
+[data-theme="light"] .navbar-link::after {
   box-shadow: none;
 }
 
@@ -549,11 +549,11 @@ main {
   color: var(--accent-blue);
 }
 
-.light .navbar-hamburger {
+[data-theme="light"] .navbar-hamburger {
   color: var(--text-gray);
 }
 
-.light .navbar-hamburger:hover {
+[data-theme="light"] .navbar-hamburger:hover {
   color: var(--accent-blue);
 }
 
@@ -566,7 +566,7 @@ main {
   transition: background 0.3s ease;
 }
 
-.light .mobile-nav-open {
+[data-theme="light"] .mobile-nav-open {
   background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -588,7 +588,7 @@ main {
   box-shadow: 0 0 30px rgba(0, 123, 255, 0.15);
 }
 
-.light .card-glow:hover {
+[data-theme="light"] .card-glow:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -602,7 +602,7 @@ main {
   transition: background 0.3s ease;
 }
 
-.light .hero-section {
+[data-theme="light"] .hero-section {
   background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0, 123, 255, 0.08) 0%, #FFFFFF 65%);
 }
 
@@ -697,7 +697,7 @@ main {
   50%       { opacity: 1;   transform: translate(-50%, -50%) scale(1.06); }
 }
 
-.light .hero-heading-wrapper::before {
+[data-theme="light"] .hero-heading-wrapper::before {
   background: radial-gradient(ellipse, rgba(0, 123, 255, 0.08) 0%, transparent 70%);
 }
 
@@ -725,11 +725,11 @@ main {
   display: none;
 }
 
-.light .hero-logo-dark {
+[data-theme="light"] .hero-logo-dark {
   display: none;
 }
 
-.light .hero-logo-light {
+[data-theme="light"] .hero-logo-light {
   display: block;
 }
 
@@ -845,21 +845,21 @@ main {
   50%       { border-color: rgba(0, 229, 255, 0.5); }
 }
 
-.light .hero-cta-primary {
+[data-theme="light"] .hero-cta-primary {
   color: #ffffff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   animation: none;
 }
 
-.light .hero-cta-primary:hover {
+[data-theme="light"] .hero-cta-primary:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-.light .hero-cta-secondary {
+[data-theme="light"] .hero-cta-secondary {
   animation: none;
 }
 
-.light .hero-cta-secondary:hover {
+[data-theme="light"] .hero-cta-secondary:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
@@ -871,7 +871,7 @@ main {
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.light .section-border-glow {
+[data-theme="light"] .section-border-glow {
   background: #F8F9FA;
   border-top: 1px solid #DEE2E6;
   border-bottom: 1px solid #DEE2E6;
@@ -890,7 +890,7 @@ main {
   transform: translateY(-2px);
 }
 
-.light .contact-info-card:hover {
+[data-theme="light"] .contact-info-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -914,7 +914,7 @@ main {
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
 }
 
-.light .contact-icon-wrapper {
+[data-theme="light"] .contact-icon-wrapper {
   background: rgba(0, 123, 255, 0.08);
 }
 
@@ -938,7 +938,7 @@ main {
   box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);
 }
 
-.light .contact-icon-wrapper-whatsapp {
+[data-theme="light"] .contact-icon-wrapper-whatsapp {
   background: rgba(34, 197, 94, 0.08);
 }
 
@@ -949,7 +949,7 @@ main {
   transition: text-shadow 0.3s ease;
 }
 
-.light .contact-phone {
+[data-theme="light"] .contact-phone {
   text-shadow: none;
 }
 
@@ -972,7 +972,7 @@ main {
   transition: all 0.3s ease;
 }
 
-.light .contact-success-card {
+[data-theme="light"] .contact-success-card {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -991,7 +991,7 @@ main {
   transition: all 0.3s ease;
 }
 
-.light .contact-success-icon {
+[data-theme="light"] .contact-success-icon {
   background: rgba(34, 197, 94, 0.08);
 }
 
@@ -1005,7 +1005,7 @@ main {
   text-shadow: 0 0 10px var(--neon-glow);
 }
 
-.light .contact-link:hover {
+[data-theme="light"] .contact-link:hover {
   text-shadow: none;
 }
 
@@ -1017,7 +1017,7 @@ main {
   transition: all 0.3s ease;
 }
 
-.light .contact-error {
+[data-theme="light"] .contact-error {
   background: rgba(239, 68, 68, 0.05);
 }
 
@@ -1031,17 +1031,17 @@ main {
   text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
 }
 
-.light .contact-whatsapp-link:hover {
+[data-theme="light"] .contact-whatsapp-link:hover {
   text-shadow: none;
 }
 
 /* Map Preview */
-.light .map-preview-border {
+[data-theme="light"] .map-preview-border {
   border-color: #DEE2E6;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.light .map-preview-placeholder {
+[data-theme="light"] .map-preview-placeholder {
   background: #F8F9FA;
 }
 
@@ -1058,7 +1058,7 @@ main {
   transition: box-shadow 0.3s ease;
 }
 
-.light .footer-logo-icon {
+[data-theme="light"] .footer-logo-icon {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -1068,7 +1068,7 @@ main {
   transition: text-shadow 0.3s ease;
 }
 
-.light .footer-brand {
+[data-theme="light"] .footer-brand {
   text-shadow: none;
 }
 
@@ -1102,12 +1102,12 @@ main {
   color: #00E5FF;
 }
 
-.light .footer-social-btn {
+[data-theme="light"] .footer-social-btn {
   border: 1px solid rgba(0, 123, 255, 0.2);
   color: var(--accent-blue);
 }
 
-.light .footer-social-btn:hover {
+[data-theme="light"] .footer-social-btn:hover {
   box-shadow: 0 0 12px rgba(0, 123, 255, 0.3);
   color: #007BFF;
 }
@@ -1133,14 +1133,14 @@ main {
   color: #00E5FF;
 }
 
-.light .footer-whatsapp-btn,
-.light .footer-instagram-btn {
+[data-theme="light"] .footer-whatsapp-btn,
+[data-theme="light"] .footer-instagram-btn {
   border: 1px solid rgba(0, 123, 255, 0.2);
   color: var(--accent-blue);
 }
 
-.light .footer-whatsapp-btn:hover,
-.light .footer-instagram-btn:hover {
+[data-theme="light"] .footer-whatsapp-btn:hover,
+[data-theme="light"] .footer-instagram-btn:hover {
   box-shadow: 0 0 12px rgba(0, 123, 255, 0.3);
   color: #007BFF;
 }
@@ -1155,7 +1155,7 @@ main {
   opacity: 1 !important;
 }
 
-.light .footer-link:hover {
+[data-theme="light"] .footer-link:hover {
   color: #007BFF;
 }
 

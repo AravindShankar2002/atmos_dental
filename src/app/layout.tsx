@@ -66,7 +66,7 @@ export default function RootLayout({
   const jsonLd = JSON.stringify(dentalClinicSchema);
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning data-theme="dark">
       <head>
         <script
           type="application/ld+json"
@@ -76,12 +76,20 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                var stored = localStorage.getItem('theme');
-                var theme = stored === 'dark' || stored === 'light'
-                  ? stored
-                  : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-                document.documentElement.classList.remove('dark', 'light');
-                document.documentElement.classList.add(theme);
+                try {
+                  var stored = localStorage.getItem('theme');
+                  var theme;
+                  if (stored === 'dark' || stored === 'light') {
+                    theme = stored;
+                  } else {
+                    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    theme = prefersDark ? 'dark' : 'light';
+                  }
+                  var html = document.documentElement;
+                  html.classList.remove('dark', 'light');
+                  html.classList.add(theme);
+                  html.setAttribute('data-theme', theme);
+                } catch (e) {}
               })();
             `,
           }}
